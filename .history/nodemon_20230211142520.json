@@ -1,0 +1,15 @@
+{
+    "verbose": true,
+    "ignore": [
+        "*.test.js",
+        "fixtures/*"
+    ],
+    "execMap": {
+        "rb": "ruby",
+        "pde": "processing --sketch={{pwd}} --run"
+    },
+    // 监听的路径 
+    "watch": [
+        "src/"
+    ]
+}

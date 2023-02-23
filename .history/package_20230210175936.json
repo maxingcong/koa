@@ -1,0 +1,13 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.14.1"
+  }
+}

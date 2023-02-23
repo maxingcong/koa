@@ -1,0 +1,16 @@
+{
+    "compilerOptions": { //别名配置文件
+        "target": "ES6",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "paths": {
+            "@/": [
+                "./app/"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

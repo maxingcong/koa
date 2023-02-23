@@ -1,0 +1,24 @@
+import query from '../db/user/query'
+import { insert } from '../db/base'
+
+interface UserList {
+    page: number
+    pageSize: number
+    total: number
+}
+
+//查询单条详情    分页查询   总条数   
+export const queryUser = async (id?: number | string, page?: number | string, pageSize?: number | string) => {
+    if (id) return await query(`select * from t_user where id='${id}'`)
+    const total: any = await query(`select count(id) from t_user`)
+    return await {
+        total
+    }
+}
+//创建角色
+export const insertUser = async (params: any) => {
+    const { user_name,
+        password,
+        is_admin } = params
+    return await insert(`insert info from t_user ('user_name,password,is_admin') values (${user_name},${password},${is_admin})`)
+}

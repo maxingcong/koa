@@ -1,0 +1,24 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "set NODE_MODE_ENV=development && nodemon server",
+    "start": "set NODE_MODE_ENV=production && nodemon server",
+    /* 启动的时候先编译 ts 然后再运行编译出来的文件 */
+    "start": "tsc --build && node ./dist/app.js",
+    /* 启动监听器运行项目 */
+    "watch": "nodemon --ext js,ts --exec yarn start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/koa": "^2.13.5",
+    "koa": "^2.14.1",
+    "module-alias": "^2.2.2",
+    "typescript": "^4.9.5"
+  },
+  "_moduleAliases": {
+    "@": "./"
+  }
+}

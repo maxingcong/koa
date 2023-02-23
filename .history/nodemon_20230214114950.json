@@ -1,0 +1,14 @@
+{
+    "verbose": true,
+    "ext": ".ts,.js",
+    "ignore": [
+        ".git",
+        "node_modules",
+        ".history",
+        "log"
+    ],
+    "exec": "ts-node --files ./app/server.ts",
+    "watch": [
+        "./"
+    ]
+}

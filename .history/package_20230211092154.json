@@ -1,0 +1,14 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "set NODE_MODE_ENV=development && node server",
+    "start": "set NODE_MODE_ENV=production && node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.14.1"
+  }
+}
